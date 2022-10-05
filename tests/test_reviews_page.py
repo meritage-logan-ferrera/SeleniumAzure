@@ -1,7 +1,8 @@
-from tests.page_reviews import ReviewsPage
-from tests.page_base import BasePage
+from page_reviews import ReviewsPage
+from page_base import BasePage
 import pytest
 import time
+from pathlib import *
 
 # This page has IFRAMES on it. Check out page_reviews.py please...
 # I could have just made to Test_ classes in this file, one testing the meritage page and one testing the iframe (they have their own URLs). I think I will do that next time...

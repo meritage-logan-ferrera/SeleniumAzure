@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <title>Test Report</title>
-    <style>body {
+    <style>body { 
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
   /* do not increase min-width as some may use split screens */
@@ -429,7 +429,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>Report.html</h1>
-    <p>Report generated on 05-Oct-2022 at 11:41:10 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 05-Oct-2022 at 11:57:44 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -448,8 +448,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.10.5</td></tr></table>
     <h2>Summary</h2>
-    <p>5 tests ran in 35.48 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">5 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>17 tests ran in 118.95 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">16 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -460,23 +460,23 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="passed results-table-row">
+      <tbody class="failed results-table-row">
         <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests/test_reviews_page.py::Test_Reviews_Page::test_main_header[edge]</td>
-          <td class="col-duration">10.51</td>
+          <td class="col-result">Failed</td>
+          <td class="col-name">tests/test_reviews_page.py::Test_Reviews_Page::test_view_1_to_view_2_on_write_review_click[firefox]</td>
+          <td class="col-duration">21.05</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">[gw2] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/>[gw2] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw2] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw2] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/> -----------------------------Captured stdout setup------------------------------ <br/>
+            <div class="log">[gw0] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/>[gw0] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw0] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/><br/>self = &lt;test_reviews_page.Test_Reviews_Page object at 0x000001F446EBBB80&gt;, driver_settings = None<br/><br/>    def test_view_1_to_view_2_on_write_review_click(self, driver_settings):<br/>      review_page = ReviewsPage(self.driver)<br/>&gt;     review_page.close_cookies()<br/><br/>tests\test_reviews_page.py:72: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>tests\page_base.py:34: in close_cookies<br/>    close_cookies.click()<br/>..\..\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webelement.py:88: in click<br/>    self._execute(Command.CLICK_ELEMENT)<br/>..\..\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webelement.py:396: in _execute<br/>    return self._parent.execute(command, params)<br/>..\..\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py:435: in execute<br/>    self.error_handler.check_response(response)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000001F446EBA500&gt;<br/>response = {&#x27;status&#x27;: 400, &#x27;value&#x27;: &#x27;{&quot;value&quot;:{&quot;error&quot;:&quot;element not interactable&quot;,&quot;message&quot;:&quot;Element &lt;a class=\\&quot;onetrust-close-b...dsChild.jsm:204:29\\nreceiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:92:31\\n&quot;}}&#x27;}<br/><br/>    def check_response(self, response: Dict[str, Any]) -&gt; None:<br/>        &quot;&quot;&quot;<br/>        Checks that a JSON response from the WebDriver does not have an error.<br/>    <br/>        :Args:<br/>         - response - The JSON response from the WebDriver server as a dictionary<br/>           object.<br/>    <br/>        :Raises: If the response contains an error message.<br/>        &quot;&quot;&quot;<br/>        status = response.get(&#x27;status&#x27;, None)<br/>        if not status or status == ErrorCode.SUCCESS:<br/>            return<br/>        value = None<br/>        message = response.get(&quot;message&quot;, &quot;&quot;)<br/>        screen: str = response.get(&quot;screen&quot;, &quot;&quot;)<br/>        stacktrace = None<br/>        if isinstance(status, int):<br/>            value_json = response.get(&#x27;value&#x27;, None)<br/>            if value_json and isinstance(value_json, str):<br/>                import json<br/>                try:<br/>                    value = json.loads(value_json)<br/>                    if len(value.keys()) == 1:<br/>                        value = value[&#x27;value&#x27;]<br/>                    status = value.get(&#x27;error&#x27;, None)<br/>                    if not status:<br/>                        status = value.get(&quot;status&quot;, ErrorCode.UNKNOWN_ERROR)<br/>                        message = value.get(&quot;value&quot;) or value.get(&quot;message&quot;)<br/>                        if not isinstance(message, str):<br/>                            value = message<br/>                            message = message.get(&#x27;message&#x27;)<br/>                    else:<br/>                        message = value.get(&#x27;message&#x27;, None)<br/>                except ValueError:<br/>                    pass<br/>    <br/>        exception_class: Type[WebDriverException]<br/>        if status in ErrorCode.NO_SUCH_ELEMENT:<br/>            exception_class = NoSuchElementException<br/>        elif status in ErrorCode.NO_SUCH_FRAME:<br/>            exception_class = NoSuchFrameException<br/>        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:<br/>            exception_class = NoSuchShadowRootException<br/>        elif status in ErrorCode.NO_SUCH_WINDOW:<br/>            exception_class = NoSuchWindowException<br/>        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:<br/>            exception_class = StaleElementReferenceException<br/>        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:<br/>            exception_class = ElementNotVisibleException<br/>        elif status in ErrorCode.INVALID_ELEMENT_STATE:<br/>            exception_class = InvalidElementStateException<br/>        elif status in ErrorCode.INVALID_SELECTOR \<br/>                or status in ErrorCode.INVALID_XPATH_SELECTOR \<br/>                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:<br/>            exception_class = InvalidSelectorException<br/>        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:<br/>            exception_class = ElementNotSelectableException<br/>        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:<br/>            exception_class = ElementNotInteractableException<br/>        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:<br/>            exception_class = InvalidCookieDomainException<br/>        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:<br/>            exception_class = UnableToSetCookieException<br/>        elif status in ErrorCode.TIMEOUT:<br/>            exception_class = TimeoutException<br/>        elif status in ErrorCode.SCRIPT_TIMEOUT:<br/>            exception_class = TimeoutException<br/>        elif status in ErrorCode.UNKNOWN_ERROR:<br/>            exception_class = WebDriverException<br/>        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:<br/>            exception_class = UnexpectedAlertPresentException<br/>        elif status in ErrorCode.NO_ALERT_OPEN:<br/>            exception_class = NoAlertPresentException<br/>        elif status in ErrorCode.IME_NOT_AVAILABLE:<br/>            exception_class = ImeNotAvailableException<br/>        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:<br/>            exception_class = ImeActivationFailedException<br/>        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:<br/>            exception_class = MoveTargetOutOfBoundsException<br/>        elif status in ErrorCode.JAVASCRIPT_ERROR:<br/>            exception_class = JavascriptException<br/>        elif status in ErrorCode.SESSION_NOT_CREATED:<br/>            exception_class = SessionNotCreatedException<br/>        elif status in ErrorCode.INVALID_ARGUMENT:<br/>            exception_class = InvalidArgumentException<br/>        elif status in ErrorCode.NO_SUCH_COOKIE:<br/>            exception_class = NoSuchCookieException<br/>        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:<br/>            exception_class = ScreenshotException<br/>        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:<br/>            exception_class = ElementClickInterceptedException<br/>        elif status in ErrorCode.INSECURE_CERTIFICATE:<br/>            exception_class = InsecureCertificateException<br/>        elif status in ErrorCode.INVALID_COORDINATES:<br/>            exception_class = InvalidCoordinatesException<br/>        elif status in ErrorCode.INVALID_SESSION_ID:<br/>            exception_class = InvalidSessionIdException<br/>        elif status in ErrorCode.UNKNOWN_METHOD:<br/>            exception_class = UnknownMethodException<br/>        else:<br/>            exception_class = WebDriverException<br/>        if not value:<br/>            value = response[&#x27;value&#x27;]<br/>        if isinstance(value, str):<br/>            raise exception_class(value)<br/>        if message == &quot;&quot; and &#x27;message&#x27; in value:<br/>            message = value[&#x27;message&#x27;]<br/>    <br/>        screen = None  # type: ignore[assignment]<br/>        if &#x27;screen&#x27; in value:<br/>            screen = value[&#x27;screen&#x27;]<br/>    <br/>        stacktrace = None<br/>        st_value = value.get(&#x27;stackTrace&#x27;) or value.get(&#x27;stacktrace&#x27;)<br/>        if st_value:<br/>            if isinstance(st_value, str):<br/>                stacktrace = st_value.split(&#x27;\n&#x27;)<br/>            else:<br/>                stacktrace = []<br/>                try:<br/>                    for frame in st_value:<br/>                        line = self._value_or_default(frame, &#x27;lineNumber&#x27;, &#x27;&#x27;)<br/>                        file = self._value_or_default(frame, &#x27;fileName&#x27;, &#x27;&lt;anonymous&gt;&#x27;)<br/>                        if line:<br/>                            file = f&quot;{file}:{line}&quot;<br/>                        meth = self._value_or_default(frame, &#x27;methodName&#x27;, &#x27;&lt;anonymous&gt;&#x27;)<br/>                        if &#x27;className&#x27; in frame:<br/>                            meth = &quot;{}.{}&quot;.format(frame[&#x27;className&#x27;], meth)<br/>                        msg = &quot;    at %s (%s)&quot;<br/>                        msg = msg % (meth, file)<br/>                        stacktrace.append(msg)<br/>                except TypeError:<br/>                    pass<br/>        if exception_class == UnexpectedAlertPresentException:<br/>            alert_text = None<br/>            if &#x27;data&#x27; in value:<br/>                alert_text = value[&#x27;data&#x27;].get(&#x27;text&#x27;)<br/>            elif &#x27;alert&#x27; in value:<br/>                alert_text = value[&#x27;alert&#x27;].get(&#x27;text&#x27;)<br/>            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here<br/>&gt;       raise exception_class(message, screen, stacktrace)<br/><span class="error">E       selenium.common.exceptions.ElementNotInteractableException: Message: Element &lt;a class=&quot;onetrust-close-btn-handler onetrust-close-btn-ui banner-close-button onetrust-lg close-icon&quot; href=&quot;javascript:void(0)&quot;&gt; could not be scrolled into view</span><br/><span class="error">E       Stacktrace:</span><br/><span class="error">E       RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1</span><br/><span class="error">E       WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5</span><br/><span class="error">E       ElementNotInteractableError@chrome://remote/content/shared/webdriver/Errors.jsm:302:5</span><br/><span class="error">E       webdriverClickElement@chrome://remote/content/marionette/interaction.js:156:11</span><br/><span class="error">E       interaction.clickElement@chrome://remote/content/marionette/interaction.js:125:11</span><br/><span class="error">E       clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:204:29</span><br/><span class="error">E       receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:92:31</span><br/><br/>..\..\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py:247: ElementNotInteractableException[gw0] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/> -----------------------------Captured stdout setup------------------------------ <br/>
 
 <br/> ----------------------------Captured stdout teardown---------------------------- <br/>Test Completed
 <br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">tests/test_reviews_page.py::Test_Reviews_Page::test_main_header[chrome]</td>
-          <td class="col-duration">27.38</td>
+          <td class="col-name">tests/test_reviews_page.py::Test_Reviews_Page::test_view_1_header[firefox]</td>
+          <td class="col-duration">16.50</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -487,8 +487,20 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_reviews_page.py::Test_Reviews_Page::test_view_1_rating_values[firefox]</td>
+          <td class="col-duration">18.36</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">[gw2] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/>[gw2] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw2] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw2] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/> -----------------------------Captured stdout setup------------------------------ <br/>
+
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Test Completed
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
           <td class="col-name">tests/test_reviews_page.py::Test_Reviews_Page::test_main_header[firefox]</td>
-          <td class="col-duration">15.07</td>
+          <td class="col-duration">19.27</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -499,8 +511,32 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">tests/test_reviews_page.py::Test_Reviews_Page::test_view_1_header[edge]</td>
-          <td class="col-duration">10.32</td>
+          <td class="col-name">tests/test_reviews_page.py::Test_Reviews_Page::test_view_1_rating[firefox]</td>
+          <td class="col-duration">16.62</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">[gw1] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/>[gw1] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw1] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw1] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/> -----------------------------Captured stdout setup------------------------------ <br/>
+
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Test Completed
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_reviews_page.py::Test_Reviews_Page::test_view_1_stars[firefox]</td>
+          <td class="col-duration">18.57</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">[gw0] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/>[gw0] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw0] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw0] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/> -----------------------------Captured stdout setup------------------------------ <br/>
+
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Test Completed
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_reviews_page.py::Test_Reviews_Page::test_view_1_rating_stars[firefox]</td>
+          <td class="col-duration">20.52</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -511,12 +547,120 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">tests/test_reviews_page.py::Test_Reviews_Page::test_view_1_rating_values[edge]</td>
-          <td class="col-duration">8.43</td>
+          <td class="col-name">tests/test_reviews_page.py::Test_Reviews_Page::test_view_1_number_reviews[firefox]</td>
+          <td class="col-duration">16.72</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">[gw1] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/>[gw1] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw1] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw1] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/> -----------------------------Captured stdout setup------------------------------ <br/>
+
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Test Completed
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_reviews_page.py::Test_Reviews_Page::test_view_1_contact_us_button[firefox]</td>
+          <td class="col-duration">19.94</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log">[gw2] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/>[gw2] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw2] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw2] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/> -----------------------------Captured stdout setup------------------------------ <br/>
+
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Test Completed
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_reviews_page.py::Test_Reviews_Page::test_view_2_header[firefox]</td>
+          <td class="col-duration">17.20</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">[gw1] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/>[gw1] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw1] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw1] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/> -----------------------------Captured stdout setup------------------------------ <br/>
+
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Test Completed
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_reviews_page.py::Test_Reviews_Page::test_view_2_sub_header[firefox]</td>
+          <td class="col-duration">18.41</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">[gw0] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/>[gw0] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw0] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw0] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/> -----------------------------Captured stdout setup------------------------------ <br/>
+
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Test Completed
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_reviews_page.py::Test_Reviews_Page::test_view_2_google_button[firefox]</td>
+          <td class="col-duration">21.98</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">[gw2] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/>[gw2] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw2] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw2] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/> -----------------------------Captured stdout setup------------------------------ <br/>
+
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Test Completed
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_reviews_page.py::Test_Reviews_Page::test_view_2_to_view_3_on_pencil_press[firefox]</td>
+          <td class="col-duration">19.29</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">[gw1] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/>[gw1] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw1] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw1] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/> -----------------------------Captured stdout setup------------------------------ <br/>
+
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Test Completed
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_reviews_page.py::Test_Reviews_Page::test_aside_header[firefox]</td>
+          <td class="col-duration">16.66</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">[gw0] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/>[gw0] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw0] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw0] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/> -----------------------------Captured stdout setup------------------------------ <br/>
+
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Test Completed
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_reviews_page.py::Test_Reviews_Page::test_more_reviews_on_scroll[firefox]</td>
+          <td class="col-duration">19.85</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">[gw2] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/>[gw2] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw2] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw2] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/> -----------------------------Captured stdout setup------------------------------ <br/>
+
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Test Completed
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_reviews_page.py::Test_Reviews_Page::test_aside_body[firefox]</td>
+          <td class="col-duration">17.83</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">[gw1] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/>[gw1] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw1] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw1] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/> -----------------------------Captured stdout setup------------------------------ <br/>
+
+<br/> ----------------------------Captured stdout teardown---------------------------- <br/>Test Completed
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_reviews_page.py::Test_Reviews_Page::test_aside_button[firefox]</td>
+          <td class="col-duration">23.59</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">[gw0] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/>[gw0] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw0] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe[gw0] win32 -- Python 3.10.5 C:\Users\logan.ferrera\AppData\Local\Programs\Python\Python310\python.exe<br/> -----------------------------Captured stdout setup------------------------------ <br/>
 
 <br/> ----------------------------Captured stdout teardown---------------------------- <br/>Test Completed
 <br/></div></td></tr></tbody></table></body></html>

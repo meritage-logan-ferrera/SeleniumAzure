@@ -7,11 +7,12 @@ from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from selenium.webdriver.chrome.service import Service
+from pathlib import *
 
 # @pytest.fixture(params=["firefox", "chrome", "edge"], scope='class')
-@pytest.fixture(params=["firefox", "chrome", "edge"])
+# @pytest.fixture(params=["firefox", "chrome", "edge"])
 # @pytest.fixture(params=["firefox", "chrome"])
-# @pytest.fixture(params=["firefox"])
+@pytest.fixture(params=["firefox"])
 # @pytest.fixture()
 def init__driver(request):
   
